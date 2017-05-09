@@ -1,0 +1,16 @@
+<h1 style='text-align:center;'>{{ object.name }}</h1>
+<h4 style='text-align:center;'>"{{ object.motto }}"</h4>
+<img class='center-block' style='width:300px; height:320px;' src="{{ object.image_url }}" alt="">
+<hr>
+
+
+<div class="row">
+
+  {% for x in minor %}
+  <div class="col-md-2">
+    <h4 style="text-align:center;">{{ x.name }}</h4>
+    <img class='detail-img center-block' src="{{ x.image_url }}" alt="">
+  </div>
+  {% endfor %}
+
+</div>

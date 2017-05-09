@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+{% if house.major == True %}
+{% include 'partials/_major_detail.html' %}
+{% else %}
+<h1>no</h1>
+{% endif %}
+
+{% endblock %}
